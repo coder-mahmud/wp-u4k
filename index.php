@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css">
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/flexnav.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -16,7 +17,7 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lessframework.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        
+ -->       
         <link href="https://fonts.googleapis.com/css?family=Kanit:400,500,700,800,900" rel="stylesheet">
 
         <?php wp_head(); ?>   
@@ -231,7 +232,7 @@
         </div>
 
 
-
+<!--
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>       
@@ -241,7 +242,7 @@
 
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.flexnav.js" type="text/javascript"></script>
 
-	
+	-->
         <script type="text/javascript">
         
 
