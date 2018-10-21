@@ -40,6 +40,7 @@ Description: Responsive Custom Theme
 
 .lh_15{line-height: 15px !important;}
 .lh_20{line-height: 20px !important;}
+.lh_25{line-height: 25px !important;}
 .lh_35{line-height: 35px !important;}
 
 
@@ -62,6 +63,7 @@ Description: Responsive Custom Theme
 
 
 .blue_text_with_yellow_bg{background: #FFC20E; display: inline-block; font-size: 42px; line-height: 30px; color:#0094D9;}
+.green_text_with_yellow_bg{background: #FFC20E; display: inline-block; font-size: 40px; line-height: 30px; color:#2AB573;}
 
 .white_text_red_bg{
   background: #ED3129; display: inline-block; font-size: 30px; line-height: 25px;color:#fff;
@@ -74,7 +76,11 @@ Description: Responsive Custom Theme
 
 
 .white_text_gray_bg{
-	background: #BCBCBC; display: inline-block;color:#fff;
+  background: #BCBCBC; display: inline-block;color:#fff;
+}
+
+.white_text_green_bg{
+	background: #2AB573; display: inline-block;color:#fff;
 }
 
 
@@ -130,8 +136,8 @@ Description: Responsive Custom Theme
 
 
 .hvr_fade_yellow {
-	background-color: #FEC10E;
-	color:#fff;
+  background-color: #FEC10E;
+  color:#fff;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -150,6 +156,31 @@ Description: Responsive Custom Theme
   background-color: #fff;
   border:1px solid #FEC10E;
   color: #FEC10E;
+}
+
+
+
+.hvr_fade_green {
+	background-color: #2AB573;
+	color:#fff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  border:1px solid transparent;
+}
+.hvr_fade_green:hover, .hvr_fade_green:focus, .hvr_fade_green:active {
+  background-color: #fff;
+  border:1px solid #2AB573;
+  color: #2AB573;
 }
 
 
@@ -495,12 +526,25 @@ a:hover{
 .member_area .single_member{}
 
 .get_involved_area{padding:110px 0 90px 0; background: url('img/Screenshot_1.png') repeat; color:#fff;}
-.get_involved_area .col-md-12{max-width: 600px; margin:0 auto;}
 
 
 
 
-/*=============== ===============*/
+
+/*=============== Our Partner Page ===============*/
+.partners_list_area{padding:135px 0; background: #0094D9; }
+.single_partner{margin-bottom: 40px;}
+.single_partner .inner_container{background: #fff; padding:60px; border:10px solid #F3F3F3 ;}
+.single_partner img{width: auto; display: block; margin-bottom: 25px;}
+
+.become_partner_area{padding:110px 0 90px 0; background: url('img/partner_bg.png') repeat; color:#fff;}
+.footer_hero{max-width: 600px; margin:0 auto;}
+
+
+
+
+
+
 /*=============== ===============*/
 /*=============== ===============*/
 /*=============== ===============*/

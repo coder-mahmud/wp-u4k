@@ -1,6 +1,11 @@
 
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
 
+	.single_partner .inner_container{padding: 30px;}
+
+
+}
 
 
 @media only screen and (min-width: 768px) and (max-width: 998px) {
@@ -75,6 +80,9 @@
 	.member_area .single_member{text-align: center;}
 	.circled_165{margin:0 auto; margin-bottom: 15px;}
 	.blue_text_with_yellow_bg{font-size: 32px;}
+	.hero_area h2{font-size: 30px !important;}
+	.fz_25 { font-size: 20px !important;}
+}
 
 
 
@@ -99,7 +107,8 @@
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 
-	.fz_45{font-size: 30px;}
+	.fz_45{font-size: 30px !important;}
+	.single_partner .inner_container{padding: 20px;}
 
 
 

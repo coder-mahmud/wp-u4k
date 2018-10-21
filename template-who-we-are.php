@@ -178,7 +178,7 @@ get_header(); ?>
         <div class="get_involved_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 footer_hero">
                         <h2 class="white_text_yellow_bg fw_900 m_b_50 fz_45 lh_35">Get Involved</h2>
                         <p class="muse_font fz_25">Are you passionate about our cause and want to get involved? Contact us to see what ways you can volunteer and help change children's lives. </p>
                         <a href="#" class="white_box_shadow hvr_fade_yellow fw_700 fz_25 ">Contact Us</a>
