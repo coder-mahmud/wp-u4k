@@ -21,11 +21,12 @@ Description: Responsive Custom Theme
   font-style: normal;
 }
 
-.fz_25{font-size: 25px;}
-.fz_30{font-size: 30px;}
-.fz_35{font-size: 35px;}
-.fz_40{font-size: 40px;}
-.fz_45{font-size: 45px;}
+.fz_20{font-size: 20px !important;}
+.fz_25{font-size: 25px !important;}
+.fz_30{font-size: 30px !important;}
+.fz_35{font-size: 35px !important;}
+.fz_40{font-size: 40px !important;}
+.fz_45{font-size: 45px !important;}
 
 .fw_700{font-weight: 700;}
 .fw_900{font-weight: 900;}
@@ -37,8 +38,9 @@ Description: Responsive Custom Theme
 .m_b_50{margin-bottom: 50px;}
 
 
-.lh_20{line-height: 20px;}
-.lh_35{line-height: 35px;}
+.lh_15{line-height: 15px !important;}
+.lh_20{line-height: 20px !important;}
+.lh_35{line-height: 35px !important;}
 
 
 .yellow_box_shadow{
@@ -59,7 +61,7 @@ Description: Responsive Custom Theme
 }
 
 
-.blue_text_with_yellow_bg{background: #FFC20E; display: inline-block; font-size: 30px; line-height: 25px;}
+.blue_text_with_yellow_bg{background: #FFC20E; display: inline-block; font-size: 42px; line-height: 30px; color:#0094D9;}
 
 .white_text_red_bg{
   background: #ED3129; display: inline-block; font-size: 30px; line-height: 25px;color:#fff;
@@ -185,7 +187,15 @@ Description: Responsive Custom Theme
   right: 0;
 }
 
-
+.circled_165{
+    max-width: 165px;
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 25px;
+-webkit-box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.4);      
+}
 
 
 
@@ -463,4 +473,34 @@ a:hover{
   left: 50%;
 }
 
-/* Icon 4 */
+
+
+
+
+/*=============== Who we are Page ===============*/
+
+.hero_area{}
+.hero_area .text_section{max-width: 400px; margin:0 auto;}
+
+.green_area{background: #2AB573; color:#fff;}
+.green_area .single_column{padding:90px 0; padding-left: 10%; padding-right: 10%;}
+.green_area .single_column:hover{background: #24AD69;}
+.green_area .designation{margin-top: 10px; font-style: italic;}
+
+
+.member_area{background: #F3F3F3; padding:100px 0; }
+.member_area .single_member{margin-bottom: 100px; padding-right: 5%;}
+.member_area .single_member .title{color:#0094D9; margin-bottom: 0;}
+.member_area .single_member .designation{color:#BCBCBC;font-style: italic;margin-top: 0;}
+.member_area .single_member{}
+
+.get_involved_area{padding:110px 0 90px 0; background: url('img/Screenshot_1.png') repeat; color:#fff;}
+.get_involved_area .col-md-12{max-width: 600px; margin:0 auto;}
+
+
+
+
+/*=============== ===============*/
+/*=============== ===============*/
+/*=============== ===============*/
+/*=============== ===============*/

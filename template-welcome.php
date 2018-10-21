@@ -1,23 +1,27 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Welcome Template
+*/
+get_header(); ?>
 
 		
-        <div class="home_hero_area">
+        <div class="home_hero_area hero_area">
             <div class="custom_container">
                 <div class="row align-items-center">
 
-                    <div class="col-md-6 pad_0_10 m_m_b_15">
+                    <div class="col-md-6 m_m_b_15">
                         <div class="text_section">
                             <h2 class="blue_text_with_yellow_bg black_900">Transforming</h2>
                             <h2 class="blue_text_with_yellow_bg black_900">unwanted uniforms </h2>
                             <h2 class="blue_text_with_yellow_bg black_900">into clothes for </h2>
                             <h2 class="blue_text_with_yellow_bg black_900">children in need.</h2>
                             <p class="muse_font m_t_25">Through uniforms 4 Kids we are closing the gap between those serving in uniform, our communities and children. The program sees the uniforms continue to protect and serve. </p>
-                            <a href="#" class="yellow_box_shadow hvr-fade fw_700">Donate Now</a>
+                            <a href="#" class="yellow_box_shadow hvr-fade fw_700 fz_20">Donate Now</a>
                         </div>
                     </div>
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 no_padding_on_mobile">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/school_boy.png" alt="">
                     </div>
                 </div>
