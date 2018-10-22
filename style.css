@@ -562,6 +562,7 @@ a:hover{
 .view_more{color:#4A4A4A !important; float: right; font-size: 25px; font-weight: 700;}
 .view_more:hover{color:#ED3129  !important;}
 
+.media_hero_area .bx-wrapper{background:none;}
 
 /*=============== ===============*/
 /*=============== ===============*/
