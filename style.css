@@ -253,6 +253,7 @@ img{width: 100%;}
 .flexnav li a:hover{ color:#FFC20E; }
 .flexnav li > ul{display: none;}
 
+.current-menu-item a{color:#0094D9 !important; background: #FEC10E !important;}
 
 
 

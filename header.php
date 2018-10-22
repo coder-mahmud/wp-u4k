@@ -37,14 +37,29 @@
                         </div>
 
                         <div class="menu_holder">
+
+                        <?php
+                        if (function_exists('wp_nav_menu')) {
+                            wp_nav_menu(array('theme_location' => 'wpj-main-menu','menu_class' => 'flexnav', 'fallback_cb' => 'wpj_default_menu',  'items_wrap' => '<ul data-breakpoint="800" id="%1$s" class="%2$s">%3$s</ul>'));
+                        }
+                        else {
+                            wpj_default_menu();
+                        }
+                        ?>
+
+
+<!--
+
                             <ul data-breakpoint="768" class="flexnav">
-                                <li><a class="hvr-underline-from-center" href="#">Our Partners</a> </li>
-                                <li><a class="hvr-underline-from-center" href="#">Who we are</a></li>
-                                <li><a class="hvr-underline-from-center" href="#">Media & Events</a></li>
-                                <li><a class="hvr-underline-from-center" href="#">Contact</a></li>
-                                <li><a class="hvr-underline-from-center" href="#">Members Area</a></li>
-                                <li><a class="hvr-underline-from-center" href="#">Donate</a></li>
-                            </ul>                
+                                <li><a class="" href="#">Our Partners</a> </li>
+                                <li><a class="" href="#">Who we are</a></li>
+                                <li><a class="" href="#">Media & Events</a></li>
+                                <li><a class="" href="#">Contact</a></li>
+                                <li><a class="" href="#">Members Area</a></li>
+                                <li><a class="" href="#">Donate</a></li>
+                            </ul> 
+
+                            -->              
                         </div>           
 
                 </div>

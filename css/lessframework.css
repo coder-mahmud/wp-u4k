@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 998px) {
 	.menu_holder{width: 100% !important;}
-	.flexnav{width: 100%; float: none; display: table; padding:0;}
+	.flexnav{width: 100%; float: none; display: table; padding:0; margin-bottom: 20px;}
 	.flexnav li{float: none; display: table-cell;}
 	.flexnav li a{padding:0;}
 
@@ -37,10 +37,10 @@
 
 @media only screen and (min-width: 768px){
 	.flexnav { text-align: center; }
-	.flexnav li{background: none; border:none; height:115px; display:inline;}
+	.flexnav li{background: none; border:none; height:115px; display:inline; padding:0 12px;}
 	.flexnav li:last-child{background: #ED3129;}
 	.flexnav li:last-child a{font-weight: bold;}
-	.flexnav li a{background: none; border:none; text-decoration: none; line-height: 115px; display: inline-block; padding:0 17px; }
+	.flexnav li a{background: none; border:none; text-decoration: none; display: inline-block; padding:0; margin-top: 45px; line-height: 12px;font-size: 17px; font-weight: 700;  }
 	.menu_holder{width: auto; float:right; text-align: right;}
 	.flexnav .touch-button{top:-2px;right:10px;width: 25px; background: none;}
 	.flexnav li > ul  li{text-align:left; border-bottom:1px solid #ddd;}
@@ -68,7 +68,7 @@
 	.logo_menu_button_holder{ overflow: hidden;}
 	.logo{margin-left: 15px;}
 	.custom_container{padding: 0 15px;}
-	.home_hero_area{background: none;}
+	.home_hero_area{background: none; margin-top: 30px;}
 	.featured_blog_area{margin:25px 0;}
 	.featured_blog_area .col-md-4{padding-top: 25px; padding-bottom: 25px;border-bottom: 2px solid #fff;}
 	.m_m_b_15{margin-bottom: 15px;display: block;}
@@ -84,6 +84,7 @@
 	.fz_25 { font-size: 20px !important;}
 	.media_hero_area, .article_list_area{padding:30px 0;}
 	.view_more{float: left;}
+	.current-menu-item a{background: none !important;}
 }
 
 
