@@ -553,6 +553,7 @@ a:hover{
 
 /*=============== Media & Event Page ===============*/
 .media_hero_area{padding: 100px 0; background: #F3F3F3;}
+.media_hero_area .row{padding: 0 !important; margin: 0 !important;}
 .media_hero_area img{border:8px solid #fff;}
 .article_list_area{padding:100px 0;}
 .single_article{margin-bottom: 80px;}
