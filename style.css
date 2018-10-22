@@ -564,5 +564,24 @@ a:hover{
 
 .media_hero_area .bx-wrapper{background:none;}
 
-/*=============== ===============*/
-/*=============== ===============*/
+/*=============== Single Media Page  ===============*/
+.single_event_hero_area{background: #F3F3F3;}
+.single_event_hero_area p{font-size: 17px;}
+
+
+
+
+
+
+
+
+/*=============== Contact Page ===============*/
+.contact_hero{}
+.contact_hero h2{margin-bottom: 25px;}
+.contact_hero p{font-size: 20px; margin-bottom: 0;}
+.contact_hero .address_box{margin:35px 0;}
+.contact_hero .address_box p{font-size: 14px;color:#808080;}
+.contact_hero .address_box p a{color:#808080;}
+.contact_hero .address_box .name{color:#0094D9; font-size: 15px;}
+.contact_hero .address_box {}
+.contact_hero .address_box {}
