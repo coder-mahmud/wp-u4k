@@ -82,6 +82,8 @@
 	.blue_text_with_yellow_bg{font-size: 32px;}
 	.hero_area h2{font-size: 30px !important;}
 	.fz_25 { font-size: 20px !important;}
+	.media_hero_area, .article_list_area{padding:30px 0;}
+	.view_more{float: left;}
 }
 
 

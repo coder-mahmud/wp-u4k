@@ -80,7 +80,12 @@ Description: Responsive Custom Theme
 }
 
 .white_text_green_bg{
-	background: #2AB573; display: inline-block;color:#fff;
+  background: #2AB573; display: inline-block;color:#fff;
+}
+
+
+.red_text_yellow_bg{
+	background: #FFC20E; display: inline-block;color:#ED3129;
 }
 
 
@@ -231,7 +236,7 @@ box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.4);
 
 
 html{overflow-x: hidden;}
-body{overflow-x: hidden; font-family: 'Kanit', sans-serif; font-weight: 900;}
+body{overflow-x: hidden; font-family: 'Kanit', sans-serif; /* font-weight: 900; */}
 img{width: 100%;}
 .logo{float: left;display: inline-block; line-height: 115px}
 .logo img{max-width: 185px;}
@@ -545,6 +550,18 @@ a:hover{
 
 
 
-/*=============== ===============*/
+/*=============== Media & Event Page ===============*/
+.media_hero_area{padding: 100px 0; background: #F3F3F3;}
+.media_hero_area img{border:8px solid #fff;}
+.article_list_area{padding:100px 0;}
+.single_article{margin-bottom: 80px;}
+.single_article .title{color:#ED3129; margin-top: 15px;}
+.single_article img{max-width: 100%; width:auto;}
+.single_article p{font-family: 'MuseoSlab-300'; font-size: 17px; font-weight: 300;}
+.single_article .read_more{color:#ED3129; font-weight: 700;}
+.view_more{color:#4A4A4A !important; float: right; font-size: 25px; font-weight: 700;}
+.view_more:hover{color:#ED3129  !important;}
+
+
 /*=============== ===============*/
 /*=============== ===============*/
