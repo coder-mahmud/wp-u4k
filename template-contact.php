@@ -47,8 +47,8 @@ get_header(); ?>
                     <div class="col-md-6 no_padding_on_mobile">
                         <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/school_boy.png" alt=""> -->
                         <?php 
-                                
-                                echo wp_get_attachment_image( get_field('right_side_image')['id'], 'full');
+                          
+                            echo wp_get_attachment_image( get_field('right_side_image')['id'], 'full');
                         ?> 
                     </div>
                 </div>

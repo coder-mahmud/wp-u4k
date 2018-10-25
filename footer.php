@@ -4,7 +4,7 @@
                 <div class="row">
 
                     <div class="col-md-6">
-                        <img class="footer_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer_logo.png" alt="">
+                        <img class="footer_logo" src="<?php get_option_tree( 'logo_footer', '', true ); ?>" alt="">
                     </div>
                     <div class="col-md-3">
 

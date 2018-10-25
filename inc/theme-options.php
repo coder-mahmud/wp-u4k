@@ -40,6 +40,12 @@ function custom_theme_options() {
 	
 
       array(
+        'id'          => 'logo',
+        'title'       => __( 'Logo Options', 'theme-text-domain' )
+      ),
+	  
+	  
+      array(
         'id'          => 'donate_area',
         'title'       => __( 'Donate Area', 'theme-text-domain' )
       ),
@@ -49,6 +55,37 @@ function custom_theme_options() {
     ),
     'settings'        => array(
 	
+	  
+      array(
+        'id'          => 'logo_header',
+        'label'       => __( 'Header Logo', 'theme-text-domain' ),
+        'std'         => '',
+        'type'        => 'upload',
+        'section'     => 'logo',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+	  
+      array(
+        'id'          => 'logo_footer',
+        'label'       => __( 'Footer Logo', 'theme-text-domain' ),
+        'std'         => '',
+        'type'        => 'upload',
+        'section'     => 'logo',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+	  	
 	  
       array(
         'id'          => 'dotate_text',

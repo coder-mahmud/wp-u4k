@@ -22,7 +22,8 @@
                 <div class="row ">
                     <div class="col-md-12 align-self-center">
                         <div class="logo_menu_button_holder">
-                            <a class="logo" href="<?php echo site_url('/')?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt=""></a>
+
+                            <a class="logo" href="<?php echo site_url('/')?>"><img src="<?php get_option_tree( 'logo_header', '', true ); ?>" alt=""></a>
                                 <div class="menu-button">
                                     <div id="nav-icon3">
                                       <span></span>
