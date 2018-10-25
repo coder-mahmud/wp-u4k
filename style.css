@@ -564,7 +564,7 @@ a:hover{
 .single_article img{max-width: 100%; width:auto;}
 .single_article p{font-family: 'MuseoSlab-300'; font-size: 17px; font-weight: 300;}
 .single_article .read_more{color:#ED3129; font-weight: 700;}
-.view_more{color:#4A4A4A !important; float: right; font-size: 25px; font-weight: 700;}
+.view_more a{color:#4A4A4A !important; float: right; font-size: 25px; font-weight: 700;}
 .view_more:hover{color:#ED3129  !important;}
 
 .media_hero_area .bx-wrapper{background:none;}
@@ -592,33 +592,3 @@ a:hover{
 .contact_hero .address_box {}
 
 
-
-
-.pagination {
-clear:both;
-padding:20px 0;
-position:relative;
-font-size:11px;
-line-height:13px;
-}
-
-.pagination span, .pagination a {
-display:block;
-float:left;
-margin: 2px 2px 2px 0;
-padding:6px 9px 5px 9px;
-text-decoration:none;
-width:auto;
-color:#fff;
-background: #555;
-}
-
-.pagination a:hover{
-color:#fff;
-background: #3279BB;
-}
-
-.pagination .current{
-padding:6px 9px 5px 9px;
-background: #3279BB;
-color:#fff;}
