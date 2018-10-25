@@ -41,6 +41,7 @@ add_image_size( 'hero_medium_1055', 1055, 1335, true );
 add_image_size( 'testimonial_image', 120, 120, true );
 add_image_size( 'featured_post_image', 570, 460, true );
 add_image_size( 'post_thumb_image', 220, 180, true );
+add_image_size( 'post_large_image', 720, 900, true );
 
 
 
@@ -175,3 +176,14 @@ function bilanti_widget_areas() {
 
   }
   add_action('widgets_init', 'bilanti_widget_areas');
+
+
+// Option Tree
+
+  add_filter( 'ot_show_pages', '__return_false' );
+  add_filter( 'ot_show_new_layout', '__return_false' );
+  add_filter( 'ot_theme_mode', '__return_true' );
+  include_once( 'option-tree/ot-loader.php' );
+  
+
+  include_once( 'inc/theme-options.php' );

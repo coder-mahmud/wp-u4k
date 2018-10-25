@@ -61,14 +61,14 @@
 
 
 
-<?php
+                        <?php
 
-   $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-    $args = array('post_type' => 'post', 'posts_per_page' => 12, 'paged' => $paged, 'category__not_in' => '3');
-    $blog_posts = new WP_Query($args);
-    if($blog_posts->have_posts()) : while($blog_posts->have_posts()) : $blog_posts->the_post();
-?>
+                            $args = array('post_type' => 'post', 'posts_per_page' => 12, 'paged' => $paged, 'category__not_in' => '3');
+                            $blog_posts = new WP_Query($args);
+                            if($blog_posts->have_posts()) : while($blog_posts->have_posts()) : $blog_posts->the_post();
+                        ?>
 
                          <div class="col-md-4 single_article">
                              
@@ -82,12 +82,10 @@
                          </div>  
 
 
-<?php endwhile;  ?>
+                        <?php endwhile;  ?>
+                        <?php endif;  ?>
 
-
-<?php endif;  ?>
-
-<?php wp_reset_query();  ?>
+                        <?php wp_reset_query();  ?>
 
 
 
@@ -103,24 +101,7 @@
              </div> 
 
 
-
-
-
-        <div class="get_involved_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 footer_hero">
-                        <h2 class="white_text_yellow_bg fw_900 m_b_50 fz_45 lh_35">Donate Now</h2>
-                        <p class="muse_font fz_25">Are you passionate about our cause and want to get involved? Contact us to see what ways you can volunteer and help change children's lives. </p>
-                        <a href="#" class="white_box_shadow hvr_fade_yellow fw_700 fz_25 ">Contact Us</a>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
+            <?php get_template_part('donate'); ?>
 
 
 

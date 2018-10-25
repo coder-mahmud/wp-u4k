@@ -572,8 +572,13 @@ a:hover{
 /*=============== Single Media Page  ===============*/
 .single_event_hero_area{background: #F3F3F3;}
 .single_event_hero_area p{font-size: 17px;}
+.single_event_link_content{padding:25px 0;}
+.single_event_link_content .back_media a{color:#BCBCBC;}
+.single_event_link_content .back_media i{color:#BCBCBC;}
+.single_event_link_content .left_aligned{float: left;}
+.single_event_link_content .right_aligned{float: right;}
 
-
+.post_details_area{font-family: 'MuseoSlab-300'; padding:80px 0; }
 
 
 
