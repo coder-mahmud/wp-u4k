@@ -7,7 +7,7 @@ get_header(); ?>
 
 		
         <div class="home_hero_area hero_area contact_hero">
-            <div class="custom_container">
+            <div class="container">
                 <div class="row align-items-center">
 
                     <div class="col-md-6 m_m_b_15">

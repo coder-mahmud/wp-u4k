@@ -518,7 +518,7 @@ a:hover{
 /*=============== Who we are Page ===============*/
 
 .hero_area{}
-.hero_area .text_section{max-width: 400px; margin:0 auto;}
+.hero_area .text_section{max-width: 400px; }
 
 .green_area{background: #2AB573; color:#fff;}
 .green_area .single_column{padding:90px 0; padding-left: 10%; padding-right: 10%;}
