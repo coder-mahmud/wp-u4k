@@ -27,10 +27,20 @@ function cwp_fc_scripts(){
    	wp_enqueue_script('main_script', get_template_directory_uri() .'/js/main.js',array(),microtime(),true);
 
 }
-
-
 add_action('wp_enqueue_scripts','cwp_fc_scripts');
 
+
+// Theme Support
+add_theme_support( 'post-thumbnails', array( 'post', 'partner_items', 'testimonials','team' ) );
+
+add_image_size( 'partner_image', 200, 50, true );
+add_image_size( 'hero_small_mobile', 370, 470, true );
+add_image_size( 'hero_medium_767', 767, 970, true );
+add_image_size( 'hero_medium_406', 406, 513, true );
+add_image_size( 'hero_medium_1055', 1055, 1335, true );
+add_image_size( 'testimonial_image', 120, 120, true );
+add_image_size( 'featured_post_image', 570, 460, true );
+add_image_size( 'post_thumb_image', 220, 180, true );
 
 
 
@@ -65,3 +75,142 @@ add_filter( 'script_loader_tag', 'add_id_to_script', 10, 3 );
     wp_list_pages('title_li=');
     echo '</ul>';
   }
+
+
+
+// Custom posts
+function cwpmh_u4k_custom_post() {
+  register_post_type( 'partner_items', 
+    array(
+      'labels' => array(
+        'name' => __( 'Partners' ),
+        'singular_name' => __( 'Partner' ),
+        'add_new_item' => __( 'Add New Partner' )
+      ),
+      'public' => true,
+      'supports' => array('author', 'thumbnail', 'title', 'editor', 'custom-fields','excerpt'),
+      'taxonomies' => array('category'),
+      'has_archive' => true,
+      'menu_position' => 5,  
+      'show_in_admin_bar' =>true,
+      'rewrite' => array('slug' => 'partner-item'),
+      'menu_icon' => 'dashicons-share'
+      
+    )
+  );
+  
+  
+
+  register_post_type( 'testimonials',
+    array(
+      'labels' => array(
+        'name' => __( 'Testimonials' ),
+        'singular_name' => __( 'Testomonial' )
+      ),
+      'public' => true,
+      'supports' => array('title', 'custom-fields', 'thumbnail','excerpt'),
+      'has_archive' => true,
+      'taxonomies' => array('category'),
+      'rewrite' => array('slug' => 'testimonial-item'),
+      'menu_icon' => 'dashicons-testimonial'
+
+    )
+  );
+
+
+  
+  
+
+  register_post_type( 'team',
+    array(
+      'labels' => array(
+        'name' => __( 'Team Member' ),
+        'singular_name' => __( 'Team Member' )
+      ),
+      'public' => true,
+      'supports' => array('title','editor', 'custom-fields', 'thumbnail','excerpt'),
+      'has_archive' => true,
+      'taxonomies' => array('category'),
+      'rewrite' => array('slug' => 'testimonial-item'),
+      'menu_icon' => 'dashicons-admin-users'
+
+    )
+  );
+
+
+
+
+
+}
+
+add_action( 'init', 'cwpmh_u4k_custom_post' );
+
+
+// Widgets
+
+function bilanti_widget_areas() {
+
+    
+      register_sidebar( array(
+      'name' => __( 'Footer Social Links', 'bilanti' ),
+      'id' => 'footer_social_links',
+      'before_widget' => '',
+          'after_widget' => '',
+          'before_title' => '<h3 class="white_text_gray_bg fw_900 fz_35 lh_20 footer_column_heading">',
+          'after_title' => '</h3>',
+      ) );
+    
+    
+      register_sidebar( array(
+      'name' => __( 'Footer support Links', 'bilanti' ),
+      'id' => 'footer_support_links',
+      'before_widget' => '',
+          'after_widget' => '',
+          'before_title' => '<h3 class="white_text_gray_bg fw_900 fz_35 lh_20 footer_column_heading">',
+          'after_title' => '</h3>',
+      ) );
+    
+    
+    
+
+  }
+  add_action('widgets_init', 'bilanti_widget_areas');
+
+
+
+function kriesi_pagination($pages = '', $range = 2)
+{  
+     $showitems = ($range * 2)+1;  
+
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }   
+
+     if(1 != $pages)
+     {
+         echo "<div class='pagination'>";
+         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+
+         for ($i=1; $i <= $pages; $i++)
+         {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             {
+                 echo ($paged == $i)? "<span class='current'>".$i."</span>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+             }
+         }
+
+         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";  
+         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+         echo "</div>\n";
+     }
+}

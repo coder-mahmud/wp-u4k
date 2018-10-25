@@ -237,7 +237,7 @@ box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.4);
 
 html{overflow-x: hidden;}
 body{overflow-x: hidden; font-family: 'Kanit', sans-serif; /* font-weight: 900; */}
-img{width: 100%;}
+img{max-width: 100%; height:auto;}
 .logo{float: left;display: inline-block; line-height: 115px}
 .logo img{max-width: 185px;}
 
@@ -314,7 +314,7 @@ a:hover{
 
 
 /* featured_blogarea */
-.testimonial_area{padding:100px 0; background: url('img/testimonial_bg.jpg') no-repeat; text-align: center;}
+.testimonial_area{padding:100px 0; text-align: center;}
 .testimonial_image_holder{
     position: absolute;
     top: 50%;
@@ -540,12 +540,15 @@ a:hover{
 /*=============== Our Partner Page ===============*/
 .partners_list_area{padding:135px 0; background: #0094D9; }
 .single_partner{margin-bottom: 40px;}
+.single_partner p{font-family: 'MuseoSlab-300'; line-height: 25px;}
 .single_partner .inner_container{background: #fff; padding:60px; border:10px solid #F3F3F3 ;}
 .single_partner img{width: auto; display: block; margin-bottom: 25px;}
 
-.become_partner_area{padding:110px 0 90px 0; background: url('img/partner_bg.png') repeat; color:#fff;}
+.become_partner_area{padding:110px 0 90px 0; color:#fff; background-size:cover;}
+.become_partner_area p{font-family: 'MuseoSlab-300'; font-size: 25px;}
 .footer_hero{max-width: 600px; margin:0 auto;}
-
+.text_section{}
+.text_section p{font-family: 'MuseoSlab-300'; margin-top: 25px;}
 
 
 
@@ -557,7 +560,7 @@ a:hover{
 .media_hero_area img{border:8px solid #fff;}
 .article_list_area{padding:100px 0;}
 .single_article{margin-bottom: 80px;}
-.single_article .title{color:#ED3129; margin-top: 15px;}
+.single_article .title{color:#ED3129; margin-top: 15px; min-height: 60px;}
 .single_article img{max-width: 100%; width:auto;}
 .single_article p{font-family: 'MuseoSlab-300'; font-size: 17px; font-weight: 300;}
 .single_article .read_more{color:#ED3129; font-weight: 700;}
@@ -587,3 +590,35 @@ a:hover{
 .contact_hero .address_box .name{color:#0094D9; font-size: 15px;}
 .contact_hero .address_box {}
 .contact_hero .address_box {}
+
+
+
+
+.pagination {
+clear:both;
+padding:20px 0;
+position:relative;
+font-size:11px;
+line-height:13px;
+}
+
+.pagination span, .pagination a {
+display:block;
+float:left;
+margin: 2px 2px 2px 0;
+padding:6px 9px 5px 9px;
+text-decoration:none;
+width:auto;
+color:#fff;
+background: #555;
+}
+
+.pagination a:hover{
+color:#fff;
+background: #3279BB;
+}
+
+.pagination .current{
+padding:6px 9px 5px 9px;
+background: #3279BB;
+color:#fff;}

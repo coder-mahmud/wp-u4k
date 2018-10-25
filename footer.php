@@ -7,20 +7,29 @@
                         <img class="footer_logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer_logo.png" alt="">
                     </div>
                     <div class="col-md-3">
+
+                        <?php dynamic_sidebar('footer_social_links'); ?>
+
+                        <!--
                         <h3 class="white_text_gray_bg fw_900 fz_35 lh_20 footer_column_heading">Follow us</h3>
                         <ul class="footer_links">
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Twitter</a></li>
                         </ul>
+                    -->
                     </div>
                     <div class="col-md-3">
+
+                        <?php dynamic_sidebar('footer_support_links'); ?>
+                        <!--
                         <h3 class="white_text_gray_bg fw_900 fz_35 lh_20 footer_column_heading">Support us</h3>
                         <ul class="footer_links">
                             <li><a href="#">Donate</a></li>
                             <li><a href="#">Partner with us</a></li>
                             <li><a href="#">Get Involved</a></li>
-                        </ul>                        
+                        </ul>
+                        -->                        
 
                     </div>
 
