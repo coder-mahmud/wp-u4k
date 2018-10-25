@@ -34,6 +34,7 @@ Description: Responsive Custom Theme
 .text_center{text-align: center;}
 .muse_font{font-family: 'MuseoSlab-300'; font-weight: 300;}
 
+.mt_0{display: block; margin-top: 0px;}
 .m_t_25{display: block; margin-top: 25px;}
 .m_b_50{margin-bottom: 50px;}
 
@@ -548,7 +549,7 @@ a:hover{
 .become_partner_area p{font-family: 'MuseoSlab-300'; font-size: 25px;}
 .footer_hero{max-width: 600px; margin:0 auto;}
 .text_section{}
-.text_section p{font-family: 'MuseoSlab-300'; margin-top: 25px;}
+.text_section p{font-family: 'MuseoSlab-300';}
 
 
 
