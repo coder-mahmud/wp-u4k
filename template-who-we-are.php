@@ -7,7 +7,7 @@ get_header(); ?>
 
 		
         <div class="home_hero_area hero_area">
-            <div class="container">
+            <div class="custom_container">
                 <div class="row align-items-center">
 
                     <div class="col-md-6 m_m_b_15">
@@ -25,7 +25,7 @@ get_header(); ?>
                     </div>
 
 
-                    <div class="col-md-6 no_padding_on_mobile">
+                    <div class="col-md-6 no_padding_on_mobile right_aligned">
                         <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/school_boy.png" alt=""> -->
                         <?php 
                             //print_r(get_field('header_big_image')); 

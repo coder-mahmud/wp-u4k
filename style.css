@@ -269,7 +269,7 @@ img{max-width: 100%; height:auto;}
     margin-right: 15px;	
 }
 
-.home_content_area .text_section {margin-bottom: 65px;}
+.home_content_area .text_section {margin-bottom: 65px; }
 .home_content_area .text_section .title{margin-top: -5px; margin-bottom: 0;}
 .home_content_area .text_section p{font-size: 13px;}
 
@@ -278,6 +278,7 @@ img{max-width: 100%; height:auto;}
 
 /* Home Donate area */
 .home_hero_area{}
+.home_hero_area .text_section{}
 .home_hero_area {background: url('img/colour_layer.png') no-repeat; background-position: left bottom; background-color: #F3F3F3;}
 
 
@@ -518,7 +519,8 @@ a:hover{
 /*=============== Who we are Page ===============*/
 
 .hero_area{}
-.hero_area .text_section{max-width: 400px; }
+.hero_area .text_section{max-width: 400px; margin:0 auto;}
+.hero_area .right_aligned{text-align: right;}
 
 .green_area{background: #2AB573; color:#fff;}
 .green_area .single_column{padding:90px 0; padding-left: 10%; padding-right: 10%;}
@@ -599,3 +601,5 @@ a:hover{
 
 /*=============== Generic Page ===============*/
 .page_content_area{margin:70px 0;}
+
+.custom_container{}

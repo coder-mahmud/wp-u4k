@@ -7,7 +7,7 @@ get_header(); ?>
 
 		
         <div class="home_hero_area hero_area">
-            <div class="container">
+            <div class="custom_container">
                 <div class="row align-items-center">
 
                     <div class="col-md-6 m_m_b_15">
@@ -34,7 +34,7 @@ get_header(); ?>
                     </div>
 
 
-                    <div class="col-md-6 no_padding_on_mobile">
+                    <div class="col-md-6 no_padding_on_mobile right_aligned">
                       <?php 
                         //print_r(the_field('heder_big_image')); 
                         echo wp_get_attachment_image( get_field('heder_big_image'), 'full');
