@@ -597,4 +597,5 @@ a:hover{
 .contact_hero .address_box {}
 .contact_hero .address_box {}
 
-
+/*=============== Generic Page ===============*/
+.page_content_area{margin:70px 0;}
