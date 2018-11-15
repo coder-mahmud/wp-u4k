@@ -18,7 +18,7 @@
         <![endif]-->
 
     	<div class="header_area">
-            <div class="container">
+            <div class="custom_container">
                 <div class="row ">
                     <div class="col-md-12 align-self-center">
                         <div class="logo_menu_button_holder">
@@ -36,6 +36,8 @@
                            
 
                         </div>
+
+
 
                         <div class="menu_holder">
 

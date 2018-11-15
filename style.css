@@ -247,7 +247,7 @@ img{max-width: 100%; height:auto;}
 .header_area{}
 
 .menu_holder{ padding: 0 !important; position:relative; z-index: 99; }
-.logo{margin-left: 19px;}
+.logo{margin-left: 19px; }
 .flexnav{width: auto; float: right !important;}
 .flexnav li{float: left; display: inline; text-align: center; width: auto;}
 .flexnav li a{padding:0; color:#BDBDBD; }
@@ -519,6 +519,7 @@ a:hover{
 /*=============== Who we are Page ===============*/
 
 .hero_area{}
+.hero_area img{width: 100%;}
 .hero_area .text_section{max-width: 400px; margin:0 auto;}
 .hero_area .right_aligned{text-align: right;}
 

@@ -187,3 +187,5 @@ function bilanti_widget_areas() {
   
 
   include_once( 'inc/theme-options.php' );
+
+
