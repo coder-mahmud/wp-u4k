@@ -73,7 +73,8 @@ get_header(); ?>
                      <div class="col-md-6 col-lg-4 single_partner">
                           <div class="inner_container">
                               
-                              <?php the_post_thumbnail('partner_image'); ?>
+                              <?php //the_post_thumbnail('partner_image'); ?>
+                              <?php the_post_thumbnail(); ?>
                               <p class="muse_font lh_25">
                                   <?php the_content(); ?>
                               </p>

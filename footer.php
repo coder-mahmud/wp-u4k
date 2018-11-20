@@ -67,7 +67,7 @@
 
 
                 $(".flexnav").flexNav({
-                    'animationSpeed' : 1000
+                    //'animationSpeed' : 1000
                 });
 
                 $('.slider').bxSlider();

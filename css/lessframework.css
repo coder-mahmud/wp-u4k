@@ -77,12 +77,13 @@
 	.flexnav li{background: none; border:none; height:115px; display:inline; /*padding:0 12px;*/}
 	.flexnav li:last-child{background: #ED3129;}
 	.flexnav li:last-child a{font-weight: bold;}
-	.flexnav li a{background: none; border:none; text-decoration: none; display: inline-block; padding:0; margin-top: 45px; line-height: 12px;font-size: 17px; font-weight: 700;  }
+	.flexnav li a{background: none; border:none; text-decoration: none; display: inline-block; padding:0; margin-top: 45px; line-height: 17px;font-size: 17px; font-weight: 700;  }
 	.menu_holder{width: auto; float:right; text-align: right;}
 	.flexnav .touch-button{top:-2px;right:10px;width: 25px; background: none;}
 	.flexnav li > ul  li{text-align:left; border-bottom:1px solid #ddd;}
 
 	.pad_0_10{padding:0 10%;}
+	.flexnav .touch-button .navicon{top:35%; display: none;}
 
 }
 
@@ -122,6 +123,10 @@
 	.media_hero_area, .article_list_area{padding:30px 0;}
 	.view_more{float: left;}
 	.current-menu-item a{background: none !important;}
+	
+	.flexnav li > ul.sub-menu li a{text-align: left; background: #eee}
+
+
 }
 
 

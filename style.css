@@ -254,6 +254,11 @@ img{max-width: 100%; height:auto;}
 .flexnav li a:hover{ color:#FFC20E; }
 .flexnav li > ul{display: none;}
 
+.flexnav li > ul.sub-menu{ top:100%;}
+.flexnav li > ul.sub-menu li{padding:0;height: auto !important; border-bottom: 1px solid #ddd;}
+.flexnav li > ul.sub-menu li a{margin:0; padding:15px 5px; color:##BDBDBD;text-align: center; background: #fff; }
+
+
 .current-menu-item a{color:#0094D9 !important; background: #FEC10E !important;}
 
 
@@ -543,6 +548,16 @@ a:hover{
 
 /*=============== Our Partner Page ===============*/
 .partners_list_area{padding:135px 0; background: #0094D9; }
+.partners_list_area .row{display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;}
+.partners_list_area .row .col-md-6{display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;}
 .single_partner{margin-bottom: 40px;}
 .single_partner p{font-family: 'MuseoSlab-300'; line-height: 25px;}
 .single_partner .inner_container{background: #fff; padding:60px; border:10px solid #F3F3F3 ;}
@@ -565,7 +580,7 @@ a:hover{
 .article_list_area{padding:100px 0;}
 .single_article{margin-bottom: 80px;}
 .single_article .title{color:#ED3129; margin-top: 15px; min-height: 60px;}
-.single_article img{max-width: 100%; width:auto;}
+.single_article img{max-width: 100%; width:100%;}
 .single_article p{font-family: 'MuseoSlab-300'; font-size: 17px; font-weight: 300;}
 .single_article .read_more{color:#ED3129; font-weight: 700;}
 .view_more a{color:#4A4A4A !important; float: right; font-size: 25px; font-weight: 700;}
@@ -601,6 +616,15 @@ a:hover{
 .contact_hero .address_box {}
 
 /*=============== Generic Page ===============*/
-.page_content_area{margin:70px 0;}
+.page_content_area{margin:70px 0;font-family: 'MuseoSlab-300'; }
+.page_content_area p{font-family: 'MuseoSlab-300'; }
 
 .custom_container{}
+img.aligncenter{text-align: center; display: block; margin:0 auto;}
+img.alignleft{float: left;}
+img.alignright{float: right;}
+
+
+/*=============== Supporter Page ===============*/
+.supporter_list_area{margin:70px 0;font-family: 'MuseoSlab-300';}
+.supporter_list_area .area_heading{margin: 45px 0; font-family: 'Kanit', sans-serif; text-align: center;}

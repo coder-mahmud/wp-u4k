@@ -42,6 +42,7 @@ add_image_size( 'testimonial_image', 120, 120, true );
 add_image_size( 'featured_post_image', 570, 460, true );
 add_image_size( 'post_thumb_image', 220, 180, true );
 add_image_size( 'post_large_image', 720, 900, true );
+add_image_size( 'team_member_small', 165, 160, true );
 
 
 
@@ -132,8 +133,26 @@ function cwpmh_u4k_custom_post() {
       'supports' => array('title','editor', 'custom-fields', 'thumbnail','excerpt'),
       'has_archive' => true,
       'taxonomies' => array('category'),
-      'rewrite' => array('slug' => 'testimonial-item'),
+      'rewrite' => array('slug' => 'team'),
       'menu_icon' => 'dashicons-admin-users'
+
+    )
+  );
+
+  
+
+  register_post_type( 'supporter',
+    array(
+      'labels' => array(
+        'name' => __( 'Supporters' ),
+        'singular_name' => __( 'Supporter' )
+      ),
+      'public' => true,
+      'supports' => array('title','editor', 'custom-fields', 'thumbnail','excerpt'),
+      'has_archive' => true,
+      'taxonomies' => array('category'),
+      'rewrite' => array('slug' => 'testimonial-item'),
+      'menu_icon' => 'dashicons-heart'
 
     )
   );

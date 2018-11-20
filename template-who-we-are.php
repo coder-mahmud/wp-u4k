@@ -5,7 +5,10 @@ Template Name: Who we are template
 */
 get_header(); ?>
 
-		
+    <?php 
+        $show_header_hero_part = get_field('show_header_hero_part');
+        if($show_header_hero_part == "Yes"){
+    ?>		
         <div class="home_hero_area hero_area">
             <div class="custom_container">
                 <div class="row align-items-center">
@@ -34,7 +37,12 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>
+
+
+    <?php
+        }
+    ?>    
 
        
 
@@ -55,7 +63,7 @@ get_header(); ?>
                         <div class="col-md-6 single_column">
 
                             <!-- <img class="circled_165" src="<?php echo get_template_directory_uri(); ?>/img/cropped.png" alt=""> -->
-                            <?php the_post_thumbnail( 'full', array( 'class'  => 'circled_165' ) ); ?>
+                            <?php the_post_thumbnail( 'team_member_small', array( 'class'  => 'circled_165' ) ); ?>
                             <!--
                             <h2 class="white_text_red_bg fw_900 fz_25 lh_15">Commissioner</h2><br>
                             <h2 class="white_text_red_bg fw_900 fz_25 lh_15">Andrew Colvin</h2> <br>
@@ -127,7 +135,7 @@ get_header(); ?>
                         <?php if(get_field('designation') !== 'Patron'): ?>
 
                         <div class="col-md-4 single_member">
-                            <?php the_post_thumbnail( 'full', array( 'class'  => 'circled_165' ) ); ?>
+                            <?php the_post_thumbnail( 'team_member_small', array( 'class'  => 'circled_165' ) ); ?>
                             <h3 class="title fz_25 fw_700"><?php the_title(); ?></h3>
                             <h4 class="designation fz_25 fw_700"><?php the_field('designation'); ?></h4>
                             <div class="muse_font">
@@ -146,7 +154,10 @@ get_header(); ?>
             </div>
         </div>
 
-
+    <?php 
+        $show_footer_involved_part = get_field('show_footer_involved_part');
+        if($show_footer_involved_part == "Yes"){
+    ?>
         <div class="get_involved_area">
             <div class="container">
                 <div class="row">
@@ -162,7 +173,9 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-
+    <?php
+        }
+    ?>
 
 
 
