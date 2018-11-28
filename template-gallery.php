@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Gallery page
+*/
+get_header(); ?>
 
 
     <?php 
@@ -42,19 +46,28 @@
     <div class="page_content_area">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <?php if(have_posts()) : ?><?php while(have_posts())  : the_post(); ?>
-            
-                    <?php the_content(); ?>
 
-                    <?php endwhile; ?>
 
-                    <?php else : ?>
-                        <div class="post">
-                            <h3><?php _e('404 Error&#58; Not Found', 'brightpage'); ?></h3>
-                        </div>
-                    <?php endif; ?>                    
+
+            <?php
+
+               $args = array('post_type' => 'gallery', 'posts_per_page' => -1,);
+               $category_posts = new WP_Query($args);
+               if($category_posts->have_posts()) : while($category_posts->have_posts()) : $category_posts->the_post();
+                $id = get_the_ID();
+            ?>
+
+                <div class="col-md-3 single_gallery_image">
+                    <a href="<?php echo  the_post_thumbnail_url('full');?>" data-lightbox="<?php echo $id; ?>" data-title="<?php the_title(); ?>"><?php the_post_thumbnail('medium');?></a>
                 </div>
+
+
+            <?php endwhile; endif; ?>
+            <?php wp_reset_query();  ?>
+
+
+
+
             </div>
         </div>
     </div>
@@ -63,8 +76,6 @@
     <?php 
         $show_footer_involved_part = get_field('show_footer_involved_part');
         if($show_footer_involved_part == "Yes"){
-        $area_bg_desktop = 
-        $area_bg_mobile = 
     ?>
     <div class="get_involved_area">
         <div class="container">

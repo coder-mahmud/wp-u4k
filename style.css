@@ -628,3 +628,6 @@ img.alignright{float: right;}
 /*=============== Supporter Page ===============*/
 .supporter_list_area{margin:70px 0;font-family: 'MuseoSlab-300';}
 .supporter_list_area .area_heading{margin: 45px 0; font-family: 'Kanit', sans-serif; text-align: center;}
+
+
+.single_gallery_image{width: 100%;}
