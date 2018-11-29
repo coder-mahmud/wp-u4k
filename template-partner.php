@@ -72,9 +72,12 @@ get_header(); ?>
 
                      <div class="col-md-6 col-lg-4 single_partner">
                           <div class="inner_container">
+                              <div class="partner_image_holder">
+                                <?php //the_post_thumbnail('partner_image'); ?>
+                                <?php the_post_thumbnail(); ?>
+                              </div>
                               
-                              <?php //the_post_thumbnail('partner_image'); ?>
-                              <?php the_post_thumbnail(); ?>
+                              
                               <p class="muse_font lh_25">
                                   <?php the_content(); ?>
                               </p>
@@ -98,6 +101,11 @@ get_header(); ?>
 
           $bg_image_desktop = get_field('become_a_partner_area_background_desktop')['url'];
           $bg_image_mobile = get_field('become_a_partner_area_background_mobile')['url'];
+
+          $footer_involved_area_heading = get_field('footer_involved_area_heading');
+          $involved_area_button_text = get_field('involved_area_button_text');
+
+
         ?>
         <style>
 
@@ -116,12 +124,9 @@ get_header(); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 footer_hero">
-                        <h2 class="white_text_green_bg fw_900 m_b_50 fz_45 lh_35">Become a partner</h2>
+                        <h2 class="white_text_green_bg fw_900 m_b_50 fz_45 lh_35"><?php echo $footer_involved_area_heading; ?></h2>
                         <p class="muse_font fz_25"><?php the_field('become_a_partner_text', false,false); ?></p>
-                        <a href="#" class="white_box_shadow hvr_fade_green fw_700 fz_25 ">Contact Us</a>
-
-
-
+                        <a href="#" class="white_box_shadow hvr_fade_green fw_700 fz_25 "><?php echo $involved_area_button_text; ?></a>
 
                     </div>
                 </div>

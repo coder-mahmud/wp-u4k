@@ -7,6 +7,7 @@ get_header(); ?>
 
     <?php 
         $show_header_hero_part = get_field('show_header_hero_part');
+        $header_button_text = get_field('header_button_text');
         if($show_header_hero_part == "Yes"){
     ?>		
         <div class="home_hero_area hero_area">
@@ -23,7 +24,7 @@ get_header(); ?>
                             -->
                             <?php the_field('left_side_heading'); ?>
                             <p class="muse_font m_t_25"><?php the_field('left_side_text'); ?></p>
-                            <a href="<?php the_field('heading_link_target'); ?>" class="yellow_box_shadow hvr-fade fw_700 fz_20">Get involved</a>
+                            <a href="<?php the_field('heading_link_target'); ?>" class="yellow_box_shadow hvr-fade fw_700 fz_20"><?php echo $header_button_text; ?></a>
                         </div>
                     </div>
 
@@ -156,19 +157,39 @@ get_header(); ?>
 
     <?php 
         $show_footer_involved_part = get_field('show_footer_involved_part');
+        $footer_involved_area_heading = get_field('footer_involved_area_heading');
+        $involved_area_button_text = get_field('involved_area_button_text');
+
         if($show_footer_involved_part == "Yes"){
+
+        $get_involved_area_bg_for_desktop = get_field('get_involved_area_bg_for_desktop')['url'];
+        $get_involved_area_bg_for_mobile = get_field('get_involved_area_bg_for_mobile')['url'];
+
+
     ?>
+
+        <style>
+
+
+          @media only screen  and (max-width: 767px) {
+            .get_involved_area{background: url('<?php echo $get_involved_area_bg_for_mobile; ?>') no-repeat; background-size: cover; }
+
+          }
+
+          @media only screen  and (min-width: 768px) {
+            .get_involved_area{background: url('<?php echo $get_involved_area_bg_for_desktop; ?>') no-repeat; background-size: cover; }
+          }
+
+        </style>
+
+    
         <div class="get_involved_area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 footer_hero">
-                        <h2 class="white_text_yellow_bg fw_900 m_b_50 fz_45 lh_35">Get Involved</h2>
+                        <h2 class="white_text_yellow_bg fw_900 m_b_50 fz_45 lh_35"><?php echo $footer_involved_area_heading; ?></h2>
                         <p class="muse_font fz_25"><?php the_field('get_involved_area_text'); ?> </p>
-                        <a href="<?php the_field('get_involved_link'); ?>" class="white_box_shadow hvr_fade_yellow fw_700 fz_25 ">Contact Us</a>
-
-
-
-
+                        <a href="<?php the_field('get_involved_link'); ?>" class="white_box_shadow hvr_fade_yellow fw_700 fz_25 "><?php echo $involved_area_button_text; ?></a>
                     </div>
                 </div>
             </div>

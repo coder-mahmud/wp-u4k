@@ -37,7 +37,8 @@ add_action('wp_enqueue_scripts','cwp_fc_scripts');
 // Theme Support
 add_theme_support( 'post-thumbnails', array( 'post', 'partner_items', 'testimonials','team','gallery' ) );
 
-add_image_size( 'partner_image', 200, 50, true );
+add_image_size( 'partner_image', 200, 200, true );
+//add_image_size('partner_image', 9999, 200, false);
 add_image_size( 'hero_small_mobile', 370, 470, true );
 add_image_size( 'hero_medium_767', 767, 970, true );
 add_image_size( 'hero_medium_406', 406, 513, true );
@@ -187,6 +188,31 @@ function cwpmh_u4k_custom_post() {
 }
 
 add_action( 'init', 'cwpmh_u4k_custom_post' );
+
+
+// Custom post taxonomy
+function testimonial_taxonomy() {
+  register_taxonomy(
+    'testimonials_cat',   //The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+    'testimonials', //post type name
+    array(
+      'hierarchical'          => true,
+      'label'                         => 'Testimonial Category',  //Display name
+      'query_var'             => true,
+      'rewrite'                       => array(
+        'slug'                  => 'testimonial-category', // This controls the base slug that will display before each term
+        'with_front'    => true // Don't display the category base before
+        ),
+      'show_admin_column' => TRUE
+      
+      )
+  );
+}
+add_action( 'init', 'testimonial_taxonomy');
+
+
+
+
 
 
 // Widgets

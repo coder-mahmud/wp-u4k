@@ -7,6 +7,7 @@ get_header(); ?>
 
     <?php 
         $show_header_hero_part = get_field('show_header_hero_part');
+        $header_button_text = get_field('header_button_text');
         if($show_header_hero_part == "Yes"){
     ?>
     <div class="home_hero_area hero_area">
@@ -23,7 +24,7 @@ get_header(); ?>
                         -->
                         <?php the_field('left_side_heading'); ?>
                         <p class="muse_font m_t_25"><?php the_field('left_side_text'); ?></p>
-                        <a href="<?php the_field('heading_link_target'); ?>" class="yellow_box_shadow hvr-fade fw_700 fz_20">Get involved</a>
+                        <a href="<?php the_field('heading_link_target'); ?>" class="yellow_box_shadow hvr-fade fw_700 fz_20"><?php echo $header_button_text; ?></a>
                     </div>
                 </div>
 

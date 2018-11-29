@@ -320,7 +320,7 @@ a:hover{
 
 
 
-/* featured_blogarea */
+/* Testimonial Area*/
 .testimonial_area{padding:100px 0; text-align: center;}
 .testimonial_image_holder{
     position: absolute;
@@ -360,6 +360,13 @@ a:hover{
     text-align: right;
 
 }
+.single_testimonial{text-align: center; padding:15px;}
+.single_testimonial .inner_content{display: block; overflow: hidden; padding:15px; height: 100%; border-radius: 5px;}
+.single_testimonial img{border-radius: 50%;}
+.single_testimonial .text{margin-top: 15px;}
+.single_testimonial .title{font-size: 15px; text-align: right;}
+
+
 
 /*=================  Eamil Area =================*/
 .email_area{background: #0094D9; padding:125px 0;}
@@ -569,7 +576,8 @@ display: flex;}
 .text_section{}
 .text_section p{font-family: 'MuseoSlab-300';}
 
-
+.partner_image_holder{min-height: 250px}
+.partner_image_holder img{max-height: 250px}
 
 
 

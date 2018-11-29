@@ -114,6 +114,8 @@ get_header(); ?>
 
 
         </style>
+
+
         <div class="testimonial_area">
             <div class="container">
                 <div class="row">
@@ -124,7 +126,7 @@ get_header(); ?>
 
                         <?php
                         global $post;
-                        $args = array( 'posts_per_page' => -1, 'post_type'=> 'testimonials');
+                        $args = array( 'posts_per_page' => -1, 'post_type'=> 'testimonials','testimonials_cat'=> 'Featured' );
                         $myposts = get_posts( $args );
                         foreach( $myposts as $post ) : setup_postdata($post); ?>
  

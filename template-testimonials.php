@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Testimonial Template
+*/
+get_header(); ?>
 
 
     <?php 
@@ -42,20 +46,42 @@
 
     <div class="page_content_area">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php if(have_posts()) : ?><?php while(have_posts())  : the_post(); ?>
-            
-                    <?php the_content(); ?>
+            <div class="row row-eq-height">
+                
+                <?php
+                     $color = get_field('author_name_color');
+                ?>
 
-                    <?php endwhile; ?>
+                <style>
+                    
+                    .single_testimonial .inner_content{display: block; overflow: hidden; border:1px solid <?php echo $color; ?>; padding:15px; height: 100%; border-radius: 5px;}
+                    .single_testimonial .title{font-size: 15px; color:<?php echo $color; ?>; text-align: right;}                    
+                </style>
+                <?php
+                   
 
-                    <?php else : ?>
-                        <div class="post">
-                            <h3><?php _e('404 Error&#58; Not Found', 'brightpage'); ?></h3>
+
+                   $args = array('post_type' => 'testimonials', 'posts_per_page' => -1,);
+                   $category_posts = new WP_Query($args);
+                   if($category_posts->have_posts()) : while($category_posts->have_posts()) : $category_posts->the_post();
+                ?>
+                    
+                    <div class="col-md-6 single_testimonial">
+                        <div class="inner_content">
+                            <?php the_post_thumbnail('testimonial_image'); ?>
+                            <p class="text"><?php the_field('testimonial_text',false ,false); ?></p>
+                            <p class="title"> - <?php the_field('title'); ?></p>                          
                         </div>
-                    <?php endif; ?>                    
-                </div>
+
+
+                    </div>
+
+
+                <?php endwhile; endif; ?>
+                <?php wp_reset_query();  ?>
+
+
+
             </div>
         </div>
     </div>
